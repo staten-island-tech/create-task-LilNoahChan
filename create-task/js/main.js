@@ -1,3 +1,5 @@
+import { DOMselectors } from "./dom";
+
 const cells = document.querySelectorAll('.cell');
 const message = document.getElementById('message');
 const resetButton = document.getElementById('reset');
