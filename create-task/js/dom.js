@@ -6,3 +6,4 @@ const DOMSelectors = {
     personal: document.getElementById("personal"),
 }
 
+export { DOMSelectors }

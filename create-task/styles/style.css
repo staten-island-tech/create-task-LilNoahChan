@@ -16,5 +16,18 @@ body {
   border: 0;
   cursor: pointer;
   box-shadow: 2px 7px #4b6b7a;
-  transition: 0.2s;
+}
+
+
+.buttons {
+  display: flex;
+  width: 90vw;
+  justify-content: space-around;
+  margin: auto;
+  margin-bottom: 7rem;
+}
+
+.titlecard{
+  font-size: large;
+  align-items: 
 }
