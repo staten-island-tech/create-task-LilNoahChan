@@ -1,7 +1,8 @@
-const DOMselectors = {
-cells: document.querySelectorAll('.cell'),
-message: document.getElementById('message'),
-resetButton: document.getElementById('reset'),
+const DOMSelectors = {
+    everything: document.getElementById("everything"),
+    grocery: document.getElementById("grocery"),
+    vitamins: document.getElementById("vitamins"),
+    household: document.getElementById("household"),
+    personal: document.getElementById("personal"),
 }
 
-export { DOMselectors };
