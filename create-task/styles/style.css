@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #board {
   display: flex;
   flex-wrap: wrap;
@@ -6,16 +7,26 @@
   margin: 0 auto;
   background-color: #ffffff;
   border: 6px solid slategray;
+=======
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background-color: #78acc4;
+  font-family: 'Jost', sans-serif;
+>>>>>>> 5c16901042748ea6ef3a70848118798ff669e211
 }
 
-.cell {
-  width: 100px;
-  height: 100px;
-  font-size: 72px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 100px;
+.btn {
+  width: 10rem;
+  border-radius: 10px;
+  height: 4vh;
+  background-color: white;
+  border: 0;
   cursor: pointer;
+<<<<<<< HEAD
 }
 
 .cell:hover {
@@ -52,3 +63,8 @@
 #reset:hover {
   background-color: #eee;
 }
+=======
+  box-shadow: 2px 7px #4b6b7a;
+  transition: 0.2s;
+}
+>>>>>>> 5c16901042748ea6ef3a70848118798ff669e211
