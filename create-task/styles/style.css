@@ -27,7 +27,7 @@ body {
   margin-bottom: 7rem;
 }
 
-.titlecard{
-  font-size: large;
-  align-items: 
+h1{
+  text-align: center;
+  font-size: 4rem;
 }
