@@ -5,8 +5,11 @@ function clearData() {
     DOMSelectors.everything.innerHTML = ""
 }
 
-function personal () {
-    document.personal.getElementById("personal").addEventListener("click", function (){
-        
-    }
-)}
+items.forEach((x) => {
+    DOMSelectors.wholecard.insertAdjacentElement("beforeend",
+    `<div class="wholeThing">
+    <img src="${x.img}" alt="Image of ${x.itemName}" class="theImage">
+    
+    </div>`
+    );
+});
