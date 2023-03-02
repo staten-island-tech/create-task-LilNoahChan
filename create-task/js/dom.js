@@ -1,10 +1,10 @@
 const DOMSelectors = {
-    everything: document.getElementById("everything"),
-    grocery: document.getElementById("grocery"),
-    vitamins: document.getElementById("vitamins"),
-    household: document.getElementById("household"),
-    personal: document.getElementById("personal"),
+    button: document.getElementById("b1"), //everything
+    button2: document.getElementById("b2"), //grocery
+    button3: document.getElementById("b3"), //vitamins
+    button4: document.getElementById("b4"), //household
+    button5: document.getElementById("b5"), //personal
     box: document.getElementById("box"),
-}
+};
 
-export { DOMSelectors }
+export { DOMSelectors };
