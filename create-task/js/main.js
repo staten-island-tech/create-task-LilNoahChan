@@ -5,12 +5,12 @@ import { items } from "./array"
 const commands = {
   createcards: function () {
     items.forEach((items)=>{
-      DOMSelectors.box.insertAdjacentElement(
+      DOMSelectors.box.insertAdjacentHTML(
         "beforeend",
         `
                 <div class="inner">
                 <h2>${items.itemName}</h2>
-                <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> a</p>
+                <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> </p>
                 <p>Category: ${items.section}</p>
                 <p>Price: ${items.itemCost}</p>
                 </div>
@@ -21,12 +21,12 @@ const commands = {
   FilterAll: function () {
     items.filter((items)=> items.section.includes("personal"))
     .forEach((items)=> {
-      DOMSelectors.box.insertAdjacentElement(
+      DOMSelectors.box.insertAdjacentHTML(
       "beforeend",
       `
               <div class="inner">
               <h2>${items.itemName}</h2>
-              <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> a</p>
+              <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> </p>
               <p>Category: ${items.section}</p>
               <p>Price: ${items.itemCost}</p>
               </div>
@@ -38,12 +38,12 @@ const commands = {
   FilterGrocery: function () {
     items.filter((items)=> items.section.includes("grocery"))
     .forEach((items)=> {
-      DOMSelectors.box.insertAdjacentElement(
+      DOMSelectors.box.insertAdjacentHTML(
       "beforeend",
       `
               <div class="inner">
               <h2>${items.itemName}</h2>
-              <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> a</p>
+              <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> </p>
               <p>Category: ${items.section}</p>
               <p>Price: ${items.itemCost}</p>
               </div>
@@ -55,12 +55,12 @@ const commands = {
   FilterVitamins: function () {
     items.filter((items)=> items.section.includes("vitamins"))
     .forEach((items)=> {
-      DOMSelectors.box.insertAdjacentElement(
+      DOMSelectors.box.insertAdjacentHTML(
       "beforeend",
       `
               <div class="inner">
               <h2>${items.itemName}</h2>
-              <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> a</p>
+              <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> </p>
               <p>Category: ${items.section}</p>
               <p>Price: ${items.itemCost}</p>
               </div>
@@ -72,12 +72,12 @@ const commands = {
   FilterHousehold: function () {
     items.filter((items)=> items.section.includes("household"))
     .forEach((items)=> {
-      DOMSelectors.box.insertAdjacentElement(
+      DOMSelectors.box.insertAdjacentHTML(
       "beforeend",
       `
               <div class="inner">
               <h2>${items.itemName}</h2>
-              <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> a</p>
+              <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> </p>
               <p>Category: ${items.section}</p>
               <p>Price: ${items.itemCost}</p>
               </div>
@@ -89,12 +89,12 @@ const commands = {
   FilterHousehold: function () {
     items.filter((items)=> items.section.includes("household"))
     .forEach((items)=> {
-      DOMSelectors.box.insertAdjacentElement(
+      DOMSelectors.box.insertAdjacentHTML(
       "beforeend",
       `
               <div class="inner">
               <h2>${items.itemName}</h2>
-              <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> a</p>
+              <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> </p>
               <p>Category: ${items.section}</p>
               <p>Price: ${items.itemCost}</p>
               </div>
@@ -106,12 +106,12 @@ const commands = {
   FilterPersonal: function () {
     items.filter((items)=> items.section.includes("personal"))
     .forEach((items)=> {
-      DOMSelectors.box.insertAdjacentElement(
+      DOMSelectors.box.insertAdjacentHTML(
       "beforeend",
       `
               <div class="inner">
               <h2>${items.itemName}</h2>
-              <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> a</p>
+              <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> </p>
               <p>Category: ${items.section}</p>
               <p>Price: ${items.itemCost}</p>
               </div>
