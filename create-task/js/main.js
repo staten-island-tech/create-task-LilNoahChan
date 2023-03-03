@@ -1,3 +1,5 @@
+
+
 import "../styles/style.css";
 import { DOMSelectors } from "./dom"
 import { items } from "./array"
@@ -13,13 +15,14 @@ const commands = {
                 <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> </p>
                 <p>Category: ${items.section}</p>
                 <p>Price: ${items.itemCost}</p>
+                <button class="addbutton" id="addbutton">add to shopping list</button>
                 </div>
               `
       );
     });
   },
   FilterAll: function () {
-    items.filter((items)=> items.section.includes("personal"))
+    items.filter((items)=> items.cvs.includes("yes"))
     .forEach((items)=> {
       DOMSelectors.box.insertAdjacentHTML(
       "beforeend",
@@ -29,6 +32,7 @@ const commands = {
               <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> </p>
               <p>Category: ${items.section}</p>
               <p>Price: ${items.itemCost}</p>
+              <button class="addbutton">add to shopping list</button>
               </div>
             `
       );
@@ -46,6 +50,7 @@ const commands = {
               <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> </p>
               <p>Category: ${items.section}</p>
               <p>Price: ${items.itemCost}</p>
+              <button class="addbutton">add to shopping list</button>
               </div>
             `
       );
@@ -63,6 +68,7 @@ const commands = {
               <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> </p>
               <p>Category: ${items.section}</p>
               <p>Price: ${items.itemCost}</p>
+              <button class="addbutton">add to shopping list</button>
               </div>
             `
       );
@@ -80,28 +86,13 @@ const commands = {
               <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> </p>
               <p>Category: ${items.section}</p>
               <p>Price: ${items.itemCost}</p>
+              <button class="addbutton">add to shopping list</button>
               </div>
             `
       );
     });
   },
 
-  FilterHousehold: function () {
-    items.filter((items)=> items.section.includes("household"))
-    .forEach((items)=> {
-      DOMSelectors.box.insertAdjacentHTML(
-      "beforeend",
-      `
-              <div class="inner">
-              <h2>${items.itemName}</h2>
-              <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> </p>
-              <p>Category: ${items.section}</p>
-              <p>Price: ${items.itemCost}</p>
-              </div>
-            `
-      );
-    });
-  },
 
   FilterPersonal: function () {
     items.filter((items)=> items.section.includes("personal"))
@@ -114,6 +105,7 @@ const commands = {
               <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> </p>
               <p>Category: ${items.section}</p>
               <p>Price: ${items.itemCost}</p>
+              <button class="addbutton">add to shopping list</button>
               </div>
             `
       );
