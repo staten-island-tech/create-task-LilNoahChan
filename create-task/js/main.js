@@ -1,3 +1,5 @@
+
+
 import "../styles/style.css";
 import { DOMSelectors } from "./dom"
 import { items } from "./array"
@@ -18,14 +20,12 @@ const commands = {
         //       `
         "beforeend",
         `
-<<<<<<< HEAD
               <div class="wholeThing">
               <img src="${items.img}" alt="Image of ${items.img}" class="theImage">
     
               <div class="nameAndStuff">
               <h1> ${items.itemName} </h1>
    
-
     <div class= "bio">
     <h2>Section: ${items.section} </h2>
     <h2>Cost: $${items.itemCost} </h2>
@@ -34,20 +34,10 @@ const commands = {
     </div>
     </div>
     `
-=======
-                <div class="inner">
-                <h2>${items.itemName}</h2>
-                <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> </p>
-                <p>Category: ${items.section}</p>
-                <p>Price: ${items.itemCost}</p>
-                </div>
-              `
->>>>>>> parent of aa12b93 (e)
       );
     });
   },
   FilterAll: function () {
-<<<<<<< HEAD
     items.filter((items) => items.cvs.includes("yes"))
       .forEach((items) => {
         DOMSelectors.box.insertAdjacentHTML(
@@ -70,22 +60,6 @@ const commands = {
       `
         );
       });
-=======
-    items.filter((items)=> items.section.includes("personal"))
-    .forEach((items)=> {
-      DOMSelectors.box.insertAdjacentHTML(
-      "beforeend",
-      `
-              <div class="inner">
-              <h2>${items.itemName}</h2>
-              <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> </p>
-              <p>Category: ${items.section}</p>
-              <p>Price: ${items.itemCost}</p>
-              </div>
-            `
-      );
-    });
->>>>>>> parent of aa12b93 (e)
   },
 
   FilterGrocery: function () {
@@ -109,20 +83,8 @@ const commands = {
       </div>
       </div>
       `
-<<<<<<< HEAD
         );
       });
-=======
-              <div class="inner">
-              <h2>${items.itemName}</h2>
-              <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> </p>
-              <p>Category: ${items.section}</p>
-              <p>Price: ${items.itemCost}</p>
-              </div>
-            `
-      );
-    });
->>>>>>> parent of aa12b93 (e)
   },
 
   FilterVitamins: function () {
@@ -146,20 +108,8 @@ const commands = {
       </div>
       </div>
       `
-<<<<<<< HEAD
         );
       });
-=======
-              <div class="inner">
-              <h2>${items.itemName}</h2>
-              <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> </p>
-              <p>Category: ${items.section}</p>
-              <p>Price: ${items.itemCost}</p>
-              </div>
-            `
-      );
-    });
->>>>>>> parent of aa12b93 (e)
   },
 
   FilterHousehold: function () {
@@ -183,41 +133,12 @@ const commands = {
       </div>
       </div>
       `
-<<<<<<< HEAD
         );
       });
-=======
-              <div class="inner">
-              <h2>${items.itemName}</h2>
-              <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> </p>
-              <p>Category: ${items.section}</p>
-              <p>Price: ${items.itemCost}</p>
-              </div>
-            `
-      );
-    });
->>>>>>> parent of aa12b93 (e)
   },
 
-  FilterHousehold: function () {
-    items.filter((items)=> items.section.includes("household"))
-    .forEach((items)=> {
-      DOMSelectors.box.insertAdjacentHTML(
-      "beforeend",
-      `
-              <div class="inner">
-              <h2>${items.itemName}</h2>
-              <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> </p>
-              <p>Category: ${items.section}</p>
-              <p>Price: ${items.itemCost}</p>
-              </div>
-            `
-      );
-    });
-  },
 
   FilterPersonal: function () {
-<<<<<<< HEAD
     items.filter((items) => items.section.includes("personal"))
       .forEach((items) => {
         DOMSelectors.box.insertAdjacentHTML(
@@ -229,23 +150,6 @@ const commands = {
                 <div class="nameAndStuff">
                 <h1> ${items.itemName} </h1>
      
-=======
-    items.filter((items)=> items.section.includes("personal"))
-    .forEach((items)=> {
-      DOMSelectors.box.insertAdjacentHTML(
-      "beforeend",
-      `
-              <div class="inner">
-              <h2>${items.itemName}</h2>
-              <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> </p>
-              <p>Category: ${items.section}</p>
-              <p>Price: ${items.itemCost}</p>
-              </div>
-            `
-      );
-    });
-  },
->>>>>>> parent of aa12b93 (e)
   
       <div class= "bio">
       <h2>Section: ${items.section} </h2>
