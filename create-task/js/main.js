@@ -8,16 +8,7 @@ const commands = {
   createcards: function () {
     items.forEach((items) => {
       DOMSelectors.box.insertAdjacentHTML(
-        // "beforeend",
-        // `
-        //         <div class="inner">
-        //         <h2>${items.itemName}</h2>
-        //         <p><img class="picture" src="${items.img}" alt="picture of ${items.img}"> </p>
-        //         <p>Category: ${items.section}</p>
-        //         <p>Price: ${items.itemCost}</p>
-        //         <button class="addbutton" id="addbutton">add to shopping list</button>
-        //         </div>
-        //       `
+
         "beforeend",
         `
               <div class="wholeThing">
@@ -164,7 +155,7 @@ const commands = {
   },
 
   remove: function () {
-    let card = document.querySelectorAll(".inner");
+    let card = document.querySelectorAll(".wholeThing");
     card.forEach((card) => {
       card.remove();
     });
