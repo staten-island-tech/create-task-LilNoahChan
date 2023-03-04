@@ -49,23 +49,48 @@ h2{
   font-size: 3rem;
 }
 
-.inner {
-  border: solid black 1rem;
-  border-radius: 6%;
-  width: 62rem;
-  height: 70rem;
-  margin: 2%;
-  font-size: 4rem;
-}
 
 img{
-  max-height: 120vh;
-  width: 40vw;
+  max-height: 60vh;
+  width: 20vw;
+  outline: black 0.3 rem solid;
 }
+
+
 
 .container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 2%;
+}
+
+.wholeThing{
+  display: flex;
+  justify-content: center;
+  outline: black 0.8rem solid;
+  width: 50vw;
+  align-items: center;
+  margin: auto;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  border-radius: 30px;
+  height: 55vh;
+}
+
+.bio{
+  text-align: center;
+}
+
+#header{
+  font-size: 10rem;
+  outline: black 0.3rem solid;
+  margin: 1rem auto;
+  width: 90vw;
+  border-radius: 30px;
+  margin-bottom: 3rem;
+}
+
+.nameAndStuff{
+  width: 20vw;
 }
