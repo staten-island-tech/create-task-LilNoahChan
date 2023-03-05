@@ -4,7 +4,10 @@ const DOMSelectors = {
     button3: document.getElementById("b3"), //vitamins
     button4: document.getElementById("b4"), //household
     button5: document.getElementById("b5"), //personal
-    box: document.getElementById("container"),
+    box: document.getElementById("items"),
+    list: document.getElementById("theItems"),
+    btn: document.getElementById("submit"),
+    input: document.getElementById("itemName"),
 };
 
 export { DOMSelectors };
