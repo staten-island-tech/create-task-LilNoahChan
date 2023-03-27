@@ -2,7 +2,7 @@ import "../styles/style.css";
 import { DOMSelectors } from "./dom";
 import { items } from "./array";
 
-
+//display items
 const commands = {
   createcards: function () {
     items.forEach((items) => {
@@ -86,13 +86,13 @@ const commands = {
 
 commands.FilterAll();
 
-//everything
+
 DOMSelectors.button.addEventListener("click", function () {
   commands.remove();
   commands.FilterAll();
 });
 
-//grocery
+
 DOMSelectors.button2.addEventListener("click", function () {
   commands.remove();
   commands.FilterType("grocery");
@@ -113,9 +113,10 @@ DOMSelectors.button5.addEventListener("click", function () {
   commands.FilterType("personal");
 });
 
+//shopping list to enter
 let totalCost = 0;
 
-DOMSelectors.btn.addEventListener("click", function () {
+DOMSelectors.btn.addEventListener("click", function list () {
   const inputValue = DOMSelectors.input.value;
   DOMSelectors.input.value = '';
 
