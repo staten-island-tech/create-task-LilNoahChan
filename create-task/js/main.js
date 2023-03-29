@@ -116,8 +116,7 @@ DOMSelectors.button5.addEventListener("click", function () {
 //shopping list to enter
 let totalCost = 0;
 
-DOMSelectors.btn.addEventListener("click", function list () {
-  const inputValue = DOMSelectors.input.value;
+function addItem(inputValue) {
   DOMSelectors.input.value = '';
 
   const itemNames = items.map(item => (item.itemName))
@@ -139,4 +138,8 @@ DOMSelectors.btn.addEventListener("click", function list () {
     <h1>Total - $${totalCost}</h1>
     `)
   }
+}
+
+DOMSelectors.btn.addEventListener("click", function(){
+  addItem(DOMSelectors.input.value);
 })
